@@ -665,6 +665,23 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-\[\#282828\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(40 40 40 / var(--tw-border-opacity));
+}
+
 .bg-\[\#282828\] {
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
@@ -709,6 +726,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
@@ -917,12 +938,20 @@ video {
     flex-direction: row;
   }
 
+  .lg\:border-0 {
+    border-width: 0px;
+  }
+
   .lg\:bg-transparent {
     background-color: transparent;
   }
 
   .lg\:p-0 {
     padding: 0px;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .lg\:text-\[15px\] {
