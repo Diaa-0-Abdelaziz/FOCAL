@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/all.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body class="">
+    <nav class="bg-[#282828] flex justify-between p-5 fixed z-50 w-full">
+        <div class=" lg:hidden flex gap-x-5">
+            <i class="fa-solid fa-bars  text-xl text-white cursor-pointer" id="menuBar"></i>
+            <i class="fa-solid fa-magnifying-glass  text-xl text-white cursor-pointer"></i>
+        </div>
+     <img src="./imgs/logo-focal.png" alt="company logo" class=" max-w-[95px] cursor-pointer">
+
+     <div id="navLinks" class=" lg:static fixed -left-full top-0 bg-white lg:bg-transparent lg:p-0 p-2 h-full transition-all duration-500">
+       <div class="lg:hidden block ">
+        <i id="closeNav" class="fa-solid fa-xmark text-xl cursor-pointer"></i>
+       </div>
+        <ul class=" lg:mt-0 mt-9 lg:p-0 p-1 flex lg:flex-row flex-col gap-5 lg:text-[15px] text-xl lg:font-normal font-bold lg:text-white text-[#282828] [&_li]:cursor-pointer">
+            <li class=" relative flex justify-between lg:before:content-[''] lg:before:bg-[#D8D8D8] lg:before:absolute lg:before:w-0 lg:before:h-[.5px] lg:before:top-full lg:before:left-0 lg:before:transition-all lg:before:duration-500 hover:lg:before:w-full">Shop by Category  <span class=" lg:hidden cursor-pointer">+</span></li>
+            <li class=" relative flex justify-between lg:before:content-[''] lg:before:bg-[#D8D8D8] lg:before:absolute lg:before:w-0 lg:before:h-[.5px] lg:before:top-full lg:before:left-0 lg:before:transition-all lg:before:duration-500 hover:lg:before:w-full">Shop by Device <span class="lg:hidden cursor-pointer">+</span></li>
+            <li class=" relative flex justify-between lg:before:content-[''] lg:before:bg-[#D8D8D8] lg:before:absolute lg:before:w-0 lg:before:h-[.5px] lg:before:top-full lg:before:left-0 lg:before:transition-all lg:before:duration-500 hover:lg:before:w-full">Collections <span class="lg:hidden cursor-pointer">+</span></li>
+            <li class=" relative flex justify-between lg:before:content-[''] lg:before:bg-[#D8D8D8] lg:before:absolute lg:before:w-0 lg:before:h-[.5px] lg:before:top-full lg:before:left-0 lg:before:transition-all lg:before:duration-500 hover:lg:before:w-full">Blog <span class="lg:hidden cursor-pointer">+</span></li>
+            <li> <select name="" id="" class=" bg-transparent cursor-pointer">
+                <option value="">United States (USD $)</option>
+                <option value="">Kanada (USD $)</option>
+                <option value="">Egypt (POUND L.E)</option>
+                <option value="">Qatar (REAL R.L)</option>
+            </select></li>
+        </ul>
+     </div>
+     
+     <div>
+        <ul class=" flex gap-5">
+            <li class="lg:block hidden">
+                <i class="fa-solid fa-magnifying-glass  text-xl text-white cursor-pointer"></i>
+            </li>
+            <li class="sm:block hidden">
+                <i class="fa-regular fa-envelope fa-solid fa-bag-shopping  text-xl text-white cursor-pointer"></i>
+            </li>
+            <li class="sm:block hidden">
+                <i class="fa-regular fa-user fa-solid fa-bag-shopping  text-xl text-white cursor-pointer"></i>
+            </li>
+            <li class="relative">
+                <i class="fa-solid fa-bag-shopping  text-xl text-white cursor-pointer"></i>
+                <span class=" absolute top-0 -right-3 w-4 h-4 text-center text-[10px] rounded-full bg-white text-[#282828]">0</span>
+            </li>
+        </ul>
+     </div>
+    </nav>
+
+<!-- ****************SWIPER.JS*************** -->
+<div class="swiper mySwiper bg-green-400 h-screen">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide_1 relative">
+             <picture class="h-full">
+                <source media="(min-width: 465px)" srcset="./imgs/tom-dixon-lp-tile-1.jpg">
+                <img src="./imgs/tom-dixon-lp-tile-1-mobile.jpg" alt="">
+              </picture>
+             <div class=" absolute left-20 text-left">
+                <p class=" text-white text-base font-bold">Collaboration</p>
+                 <p class=" text-[52px] font-extrabold	text-white">
+                     Native Union x
+                 </p>
+                 <p class=" text-[52px] font-extrabold	text-white">
+                     Tom Dixon
+                 </p>
+            </div>
+        </div>
+        <div class="swiper-slide slide_2 relative">
+            <picture class="h-full">
+                <source media="(min-width: 768px)" srcset="./imgs/mk-lp-tile-1.jpg">
+                <source media="(min-width: 465px)" srcset="./imgs/Image_blog_01_1500x1125_ed7bdb21-4c7f-42f2-b34d-48ba9790e626.jpg">
+                <img src="./imgs/mk-lp-tile-1-mobile.jpg" alt="">
+              </picture>
+            <div class=" absolute left-20 text-left">
+                <p class=" text-white text-base font-bold">New in</p>
+                 <p class=" text-[52px] font-extrabold	text-white">
+                    The Maison
+                 </p>
+                 <p class=" text-[52px] font-extrabold	text-white">
+                    Kitsuné
+                 </p>
+                 <p class=" text-[52px] font-extrabold	text-white">
+                    Collab
+                 </p>
+            </div>
+        </div>
+        <div class="swiper-slide slide_3 relative">
+           <picture class="h-full">
+            <source media="(min-width: 768px)" srcset="./imgs/heritage-lp-3.jpg">
+            <source media="(min-width: 465px)" srcset="./imgs/heritage-collection.jpg">
+            <img src="./imgs/heritage-lp-3-mobile.jpg" alt="">
+          </picture>
+           <div class=" absolute left-20 text-left">
+            <p class=" text-white text-base font-bold">Collaboration</p>
+             <p class=" text-[52px] font-extrabold	text-white">
+                 Native Union x
+             </p>
+             <p class=" text-[52px] font-extrabold	text-white">
+                 Tom Dixon
+             </p>
+        </div>
+        </div>
+       
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./js/main.js"></script>
+</body>
+</html>
